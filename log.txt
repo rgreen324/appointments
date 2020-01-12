@@ -1,0 +1,2 @@
+May 14, 2019 12:53:55 PM controller.LogInScreenController logInButtonClick
+INFO: test logged into the system

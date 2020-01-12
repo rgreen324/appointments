@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsScreenController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="425.0" prefWidth="500.0" spacing="20.0">
+         <children>
+            <Label text="Reports">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button minHeight="40.0" mnemonicParsing="false" onAction="#typesButton" prefWidth="200.0" text="Appointment Types By Month" />
+            <Button layoutX="202.0" layoutY="87.0" minHeight="40.0" mnemonicParsing="false" onAction="#schedulesButton" prefWidth="200.0" text="Consultant Schedules" />
+            <Button layoutX="184.0" layoutY="114.0" minHeight="40.0" mnemonicParsing="false" onAction="#contactButton" prefWidth="200.0" text="Customer Contact List" />
+            <Button layoutX="218.0" layoutY="87.0" minHeight="40.0" mnemonicParsing="false" onAction="#userLogButton" prefWidth="200.0" text="User Log File" />
+            <Button layoutX="160.0" layoutY="287.0" minHeight="40.0" mnemonicParsing="false" onAction="#mainMenuButton" prefWidth="200.0" text="Main Menu" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

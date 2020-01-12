@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsScheduleScreenController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="525.0" prefWidth="500.0">
+         <children>
+            <Label text="Consultant Schedule">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="userCB" onAction="#userCBSelect" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TableView fx:id="scheduleTable" prefHeight="340.0" prefWidth="480.0">
+              <columns>
+                <TableColumn fx:id="scheduleStart" prefWidth="75.0" visible="false" />
+                <TableColumn fx:id="scheduleDate" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="scheduleTitle" prefWidth="245.0" text="Title" />
+                  <TableColumn fx:id="scheduleCustomer" prefWidth="134.0" text="Customer" />
+              </columns>
+            </TableView>
+            <Button layoutX="218.0" layoutY="87.0" mnemonicParsing="false" onAction="#backButton" text="Back">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
